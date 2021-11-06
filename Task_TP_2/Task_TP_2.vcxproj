@@ -139,7 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="SetOfStacks.cpp" />
+    <ClCompile Include="Stack.cpp" />
     <ClCompile Include="task_1.cpp" />
+    <ClCompile Include="task_2_main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Plate.h" />
+    <ClInclude Include="SetOfStacks.h" />
+    <ClInclude Include="Stack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
