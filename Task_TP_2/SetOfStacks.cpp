@@ -43,9 +43,9 @@ void SetOfStacks::creat_SetOfStacks(int max_lenght) {
                 data[length - 1].push(P);
         else
         {
-             Stack S;
-             S.push(P);
-             memory_allocation_SetOfStacks(S);
+            Stack S;
+            S.push(P);
+            memory_allocation_SetOfStacks(S);
         }
     }
     else
@@ -69,7 +69,7 @@ void SetOfStacks::memory_allocation_SetOfStacks(Stack& S) {
 void SetOfStacks::delete_plate() {
     if (data[length - 1].getSize() != 0)
     {
-        data[length - 1].pop();
+        cout << data[length - 1].pop() << endl;
         if (data[length - 1].getSize() == 0)
         {
             Stack* S = new Stack[length - 1];
@@ -93,8 +93,8 @@ void SetOfStacks::output_to_console() {
             cout << "Количество тарелок в стопке: " << data[i].getSize() << endl;
                 data[i].print();
         }
+        cout << endl;
     }
-    cout << endl;
 }
 
 string input_keyboard() {
@@ -108,5 +108,4 @@ string input_keyboard() {
         else
             cout << "Введен неверный цвет тарелки, повторите ввод." << endl;
     }
-    cout << endl;
 }

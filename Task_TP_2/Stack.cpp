@@ -1,18 +1,5 @@
 #include "Stack.h"
 
-Stack::Stack(const Stack& S){
-    size = 0;
-    stack_ptr = nullptr;
-    if (S.size != 0)
-        add(S.stack_ptr);
-}
-
-void Stack::add(Plate* p) {
-    if (nullptr != p->getPrevPtr())
-        add(p->getPrevPtr());
-    push(p);
-}
-
 Stack::~Stack() {
     while(size != 0)
         pop();
